@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Principal</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header id="cabecera-container"></header>
+
+    <nav id="menu-container"></nav>
+
+    <main>
+        <h1>Bienvenido a la Página Principal</h1>
+        <p>Este es el contenido principal de tu página web. Puedes agregar aquí toda la información relevante.</p>
+    </main>
+
+    <footer id="pie-de-pagina-container"></footer>
+
+    <script>
+        // Cargar contenido de cabecera.html
+        fetch('cabecera.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('cabecera-container').innerHTML = data)
+            .catch(error => console.error('Error al cargar cabecera:', error));
+
+        // Cargar contenido de menu.html
+        fetch('menu.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('menu-container').innerHTML = data)
+            .catch(error => console.error('Error al cargar menú:', error));
+
+        // Cargar contenido de pie_de_pagina.html
+        fetch('pie_de_pagina.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('pie-de-pagina-container').innerHTML = data)
+            .catch(error => console.error('Error al cargar pie de página:', error));
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>

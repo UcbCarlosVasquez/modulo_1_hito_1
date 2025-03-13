@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página Principal</title>
-    <link rel="stylesheet" href="assets/estilos.css">
+    <title>Página 2</title>
+    <link rel="stylesheet" href="../assets/estilos.css">
 </head>
 <body>
     <header>
@@ -14,31 +14,30 @@
         <div id="menu-container"></div>
     </nav>
     <main>
-        <h2>Contenido Principal de la Página Principal</h2>
-        <p>Esta es la página principal de nuestro sitio web. Aquí encontrarás una introducción y enlaces a las demás secciones.</p>
-        <ul>
-            <li>Enlace a la <a href="vistas/pagina2.html">Página 2</a></li>
-            <li>Información importante en la <a href="vistas/pagina3.html">Página 3</a></li>
-            <li>Descubre más en la <a href="vistas/pagina4.html">Página 4</a></li>
-            <li>Contacto y detalles en la <a href="vistas/pagina5.html">Página 5</a></li>
-        </ul>
-        <img src="../assets/imagen_encabezado.jpg" alt="Imagen del Encabezado" width="100">
+        <h2>Contenido Principal de la Página 2</h2>
+        <p>Esta es la sección de contenido principal de la Página 2. Aquí puedes detallar información específica sobre un tema.</p>
+        <ol>
+            <li>Primer punto importante</li>
+            <li>Segundo punto a destacar</li>
+            <li>Tercera idea relevante</li>
+        </ol>
+        <img src="../assets/imagen_pagina2.jpg" alt="Imagen de la Página 2" width="300">
     </main>
     <footer>
         <div id="pie-de-pagina-container"></div>
     </footer>
     <script>
-        fetch('common/cabecera.html')
+        fetch('../common/cabecera.html')
             .then(response => response.text())
             .then(data => document.getElementById('cabecera-container').innerHTML = data)
             .catch(error => console.error('Error al cargar cabecera:', error));
 
-        fetch('common/menu.html')
+        fetch('../common/menu.html')
             .then(response => response.text())
             .then(data => document.getElementById('menu-container').innerHTML = data)
             .catch(error => console.error('Error al cargar menú:', error));
 
-        fetch('common/pie_de_pagina.html')
+        fetch('../common/pie_de_pagina.html')
             .then(response => response.text())
             .then(data => document.getElementById('pie-de-pagina-container').innerHTML = data)
             .catch(error => console.error('Error al cargar pie de página:', error));

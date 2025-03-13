@@ -48,3 +48,32 @@ footer {
     bottom: 0;
     width: 100%;
 }
+/* Estilos para el contenedor del menú */
+.menu-navegacion {
+    background-color: #f0f0f0;
+    padding: 10px;
+}
+
+/* Estilos para la lista del menú */
+.menu-lista {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Para mostrar los elementos del menú en línea horizontalmente */
+    justify-content: center; /* Centrar los elementos del menú */
+}
+
+/* Estilos para cada elemento de la lista del menú */
+.menu-item {
+    margin: 0 15px;
+}
+
+/* Estilos para los enlaces del menú */
+.menu-link {
+    text-decoration: none;
+    color: #333;
+}
+
+.menu-link:hover {
+    color: #007bff;
+}

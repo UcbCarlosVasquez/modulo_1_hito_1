@@ -1,0 +1,4 @@
+<h1>Tarea 1</h1>
+<img src="<?php echo BASE_URL; ?>assets/imagen_encabezado.jpg" alt="Imagen del Encabezado" width="100">
+<p>Juan Carlos Vasquez Macias</p>
+<p>Cursante de la maestria.</p>

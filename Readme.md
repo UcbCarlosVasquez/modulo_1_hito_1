@@ -18,16 +18,16 @@ ubicado dentro de htdocs
         └── imagen_pagina5.jpg
         └── imagen_principal.jpg
     └── 📁common
-        └── cabecera.html
-        └── menu.html
-        └── pie_de_pagina.html
+        └── cabecera.php
+        └── menu.php
+        └── pie_de_pagina.php
     └── 📁vistas
-        └── pagina2.html
-        └── pagina3.html
-        └── pagina4.html
-        └── pagina5.html
+        └── pagina2.php
+        └── pagina3.php
+        └── pagina4.php
+        └── pagina5.php
     └── captura.png
     └── imagen_encabezado.jpg
-    └── index.html
+    └── index.php
     └── README.md
 ```

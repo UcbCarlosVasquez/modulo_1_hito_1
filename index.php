@@ -22,6 +22,7 @@
             <li>Información importante en la <a href="<?php echo BASE_URL; ?>vistas/pagina3.php">Página 3</a></li>
             <li>Descubre más en la <a href="<?php echo BASE_URL; ?>vistas/pagina4.php">Página 4</a></li>
             <li>Contacto y detalles en la <a href="<?php echo BASE_URL; ?>vistas/pagina5.php">Página 5</a></li>
+            <li>Formulario Libro <a href="<?php echo BASE_URL; ?>vistas/libro/form_libro.php">Formulario Libro</a></li>
         </ul>
         <img src="assets/imagen_encabezado.jpg" alt="Imagen del Encabezado" width="100">
     </main>

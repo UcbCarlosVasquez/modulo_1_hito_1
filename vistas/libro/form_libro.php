@@ -16,16 +16,40 @@
             </div>
             <div class="form-group">
                 <label for="nombre_libro">Nombre del Libro:</label>
-                <input type="text" class="input-nombre-libro" name="nombre_libro" required>
+                <input type="text" class="input-nombre-libro" name="nombre_libro" id="nombre_libro" required>
             </div>
             <div class="form-group">
                 <label for="paginas">Número de Páginas:</label>
                 <input type="number" id="input-paginas" name="paginas" required>
             </div>
             <div class="form-group">
-                <button type="submit">Enviar</button>
+                <button type="submit" id="enviar_datos">Enviar</button>
             </div>
         </form>
     </div>
 </body>
+<script>
+    // JavaScript para manejar el evento de envío del formulario
+    // document.querySelector('form').addEventListener('submit', function(event) {
+    //     event.preventDefault(); // Evita el envío del formulario por defecto
+
+    //     // Aquí puedes agregar la lógica para manejar el envío del formulario
+    //     const autor = document.getElementById('input-autor').value;
+    //     const nombreLibro = document.getElementById('nombre_libro').value;
+    //     const paginas = document.getElementById('input-paginas').value;
+
+    //     console.log(`Autor: ${autor}, Nombre del Libro: ${nombreLibro}, Páginas: ${paginas}`);
+    // });
+    var buton = document.getElementById('enviar_datos');
+    buton.addEventListener('click', function(event) {
+        event.preventDefault(); // Evita el envío del formulario por defecto
+
+        // Aquí puedes agregar la lógica para manejar el envío del formulario
+        const autor = document.getElementById('input-autor').value;
+        const nombreLibro = document.getElementById('nombre_libro').value;
+        const paginas = document.getElementById('input-paginas').value;
+
+        console.log(`Autor: ${autor}, Nombre del Libro: ${nombreLibro}, Páginas: ${paginas}`);
+    });
+</script>
 </html>

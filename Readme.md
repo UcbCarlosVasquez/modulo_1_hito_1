@@ -31,3 +31,18 @@ ubicado dentro de htdocs
     └── index.php
     └── README.md
 ```
+
+## Comandos  de Git
+``` bash
+# Para guardar Cambios
+$ git add .
+
+# Añadir un adescripcion o detalle del archivo
+$ git commit -m "mensaje"
+
+# Llevar los cambios a Git
+$ git push
+
+# Traer los cambios a Git
+$ git pull
+```

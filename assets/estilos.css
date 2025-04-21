@@ -197,3 +197,110 @@ button[type="submit"]:hover {
         padding: 15px;
     }
 }
+
+/* Estilo global para tablas */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 16px;
+    text-align: left;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+}
+
+/* Encabezados de la tabla */
+table thead th {
+    background-color: #0078d4; /* Color distintivo */
+    color: #ffffff;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+}
+
+/* Celdas del cuerpo */
+table tbody td {
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+}
+
+/* Filas alternas */
+table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Hover en filas */
+table tbody tr:hover {
+    background-color: #eef3fc;
+}
+
+/* Pie de tabla */
+table tfoot th {
+    background-color: #0078d4;
+    color: #ffffff;
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+}
+
+/* Ajuste para móviles */
+@media screen and (max-width: 768px) {
+    table {
+        font-size: 14px;
+    }
+
+    table thead, table tfoot {
+        display: none; /* Oculta encabezados y pie */
+    }
+
+    table tbody td {
+        display: block;
+        width: 100%;
+        text-align: right;
+        position: relative;
+    }
+
+    table tbody td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 10px;
+        font-weight: bold;
+        text-align: left;
+    }
+}
+
+/* Estilo para botones */
+button, .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #0078d4; /* Azul distintivo */
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Hover y focus */
+button:hover, .btn:hover {
+    background-color: #005bb5; /* Azul más oscuro */
+    transform: scale(1.05); /* Ligeramente más grande */
+}
+
+button:active, .btn:active {
+    background-color: #003f87; /* Azul aún más oscuro */
+    transform: scale(0.95); /* Ligeramente más pequeño */
+}
+
+/* Desactivado */
+button:disabled, .btn:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
+/* Alineación específica para botones antes de tablas */
+.btn-wrapper {
+    margin-bottom: 20px;
+}

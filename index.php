@@ -23,6 +23,7 @@
             <li>Descubre más en la <a href="<?php echo BASE_URL; ?>vistas/pagina4.php">Página 4</a></li>
             <li>Contacto y detalles en la <a href="<?php echo BASE_URL; ?>vistas/pagina5.php">Página 5</a></li>
             <li>Libros <a href="<?php echo BASE_URL; ?>vistas/libro/index_libro.php">Libros</a></li>
+            <li>Estante <a href="<?php echo BASE_URL; ?>vistas/estante/index_estante.php">Estantes</a></li>
         </ul>
         <img src="assets/imagen_encabezado.jpg" alt="Imagen del Encabezado" width="100">
     </main>

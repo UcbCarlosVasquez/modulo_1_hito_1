@@ -159,8 +159,32 @@ label {
     font-size: 14px;
     background-color: #e8f5e9; /* Fondo verde claro */
 }
-
-
+#input-cantidad-columnas, #input-cantidad-filas {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #28a745; /* Verde para este campo */
+    border-radius: 8px;
+    font-size: 14px;
+    background-color: #e8f5e9; /* Fondo verde claro */
+}
+#input-tipo-de-estante {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #0978d3; /* Verde para este campo */
+    border-radius: 8px;
+    font-size: 14px;
+    background-color: #e8f5e9; /* Fondo verde claro */
+}
+#input-nombre-de-estante {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #eccb10; /* Verde para este campo */
+    border-radius: 8px;
+    font-size: 14px;
+    background-color: #e8f5e9; /* Fondo verde claro */
+    text-transform: uppercase; /* Texto en mayúsculas */
+    font-weight: bold; /* Texto en negrita */
+}
 input[type="text"],
 input[type="number"] {
     width: 99%;

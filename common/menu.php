@@ -9,5 +9,6 @@ include_once __DIR__ . '/../config.php'; // Incluye la configuración
         <li class="menu-item"><a class="menu-link" href="<?php echo BASE_URL; ?>vistas/pagina4.php">Página 4</a></li>
         <li class="menu-item"><a class="menu-link" href="<?php echo BASE_URL; ?>vistas/pagina5.php">Página 5</a></li>
         <li class="menu-item"><a class="menu-link" href="<?php echo BASE_URL; ?>vistas/libro/index_libro.php">Libros</a></li>
+        <li class="menu-item"><a class="menu-link" href="<?php echo BASE_URL; ?>vistas/estante/index_estante.php">Estantes</a></li>
     </ul>
 </nav>
